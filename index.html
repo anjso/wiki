@@ -197,6 +197,8 @@ Error message and password prompt
 
 <li>$:/theme</li>
 
+<li>$:/themes/tiddlywiki/readonly</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
@@ -17854,8 +17856,8 @@ Error message and password prompt
 <div created="20210408062315288" modified="20210408062317091" title="$:/state/folded/欢迎来到南京记忆">
 <pre>show</pre>
 </div>
-<div created="20210408055357940" modified="20210408055357940" title="$:/state/tab--1418380610">
-<pre>$:/core/ui/ControlPanel/Plugins/Add/Languages</pre>
+<div created="20210408055357940" modified="20210408063158948" title="$:/state/tab--1418380610">
+<pre>$:/core/ui/ControlPanel/Plugins/Add/Themes</pre>
 </div>
 <div created="20210408054943994" modified="20210408063143773" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Theme</pre>
@@ -17863,14 +17865,14 @@ Error message and password prompt
 <div created="20210408053358417" modified="20210408055414316" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20210408055353950" modified="20210408055353950" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
+<div created="20210408055353950" modified="20210408063154027" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
 </div>
 <div created="20210408054931107" modified="20210408054931107" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
-<div created="20210408053402342" modified="20210408063142500" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20210408053402342" modified="20210408063153223" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20210408053408431" modified="20210408054628271" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -17881,11 +17883,22 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210408063140928" list="$:/ControlPanel 欢迎来到南京记忆" modified="20210408063140928" title="$:/StoryList">
+<div created="20210408063140928" list="$:/ControlPanel $:/themes/tiddlywiki/readonly 欢迎来到南京记忆" modified="20210408063210237" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210408063148110" modified="20210408063148110" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
+</div>
+<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/snowwhite" description="Hides the ability to edit tiddlers" name="ReadOnly" plugin-type="theme" title="$:/themes/tiddlywiki/readonly" type="application/json" version="5.1.23">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/themes/tiddlywiki/readonly/styles.tid&quot;: {
+            &quot;title&quot;: &quot;$:/themes/tiddlywiki/readonly/styles.tid&quot;,
+            &quot;tags&quot;: &quot;[[$:/tags/Stylesheet]]&quot;,
+            &quot;text&quot;: &quot;\\define button-selector(title)\nbutton.$title$, .tc-drop-down button.$title$, div.$title$\n\\end\n\n\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fclone&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fdelete&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fedit&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fnew-here&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fnew-journal-here&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fimport&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fmanager&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fnew-image&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fnew-journal&gt;&gt;,\n&lt;&lt;button-selector tc-btn-\\%24\\%3A\\%2Fcore\\%2Fui\\%2FButtons\\%2Fnew-tiddler&gt;&gt; {\n\tdisplay: none;\n}&quot;
+        }
+    }
+}</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
 <pre>{
